@@ -1,0 +1,59 @@
+/.*/Attack(
+  (search_method): GreedyWordSwapWIR(
+    (wir_method):  unk
+  )
+  (goal_function):  UntargetedClassification
+  (transformation):  CompositeTransformation(
+    (0): WordSwapNeighboringCharacterSwap(
+        (random_one):  True
+      )
+    (1): WordSwapRandomCharacterSubstitution(
+        (random_one):  True
+      )
+    (2): WordSwapRandomCharacterDeletion(
+        (random_one):  True
+      )
+    (3): WordSwapRandomCharacterInsertion(
+        (random_one):  True
+      )
+    )
+  (constraints): 
+    (0): LevenshteinEditDistance(
+        (max_edit_distance):  30
+        (compare_against_original):  True
+      )
+    (1): RepeatModification
+    (2): StopwordModification
+  (is_black_box):  True
+) 
+/.*/
+--------------------------------------------- Result 1 ---------------------------------------------
+[92mPositive (91%)[0m --> [91mNegative (69%)[0m
+
+lovingly photographed in the manner of a golden book sprung to [92mlife[0m , stuart little 2 [92mmanages[0m [92msweetness[0m largely without stickiness .
+
+lovingly photographed in the manner of a golden book sprung to [91mife[0m , stuart little 2 [91mmanager[0m [91mseetness[0m largely without stickiness .
+
+
+--------------------------------------------- Result 2 ---------------------------------------------
+[92mPositive (99%)[0m --> [91mNegative (82%)[0m
+
+[92mconsistently[0m [92mclever[0m and [92msuspenseful[0m .
+
+[91mconisstently[0m [91mcelver[0m and [91mHuspenseful[0m .
+
+
+
++-------------------------------+--------+
+| Attack Results                |        |
++-------------------------------+--------+
+| Number of successful attacks: | 2      |
+| Number of failed attacks:     | 0      |
+| Number of skipped attacks:    | 0      |
+| Original accuracy:            | 100.0% |
+| Accuracy under attack:        | 0.0%   |
+| Attack success rate:          | 100.0% |
+| Average perturbed word %:     | 45.0%  |
+| Average num. words per input: | 12.0   |
+| Avg num queries:              | 25.0   |
++-------------------------------+--------+
