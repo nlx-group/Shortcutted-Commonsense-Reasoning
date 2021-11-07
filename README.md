@@ -1,6 +1,6 @@
 # Shortcutted Commonsense: Data Spuriousness in Deep Learning of Commonsense Reasoning
 
-This repository contains the code and some data (certain datasets cannot be shared due to licensing issues) for the [paper]():
+This repository contains the code and some data (certain datasets cannot be shared due to licensing issues) for the [paper](https://aclanthology.org/2021.emnlp-main.113/):
 
 ```
 Shortcutted Commonsense: Data Spuriousness in Deep Learning of Commonsense Reasoning
@@ -37,15 +37,19 @@ It follows a list of the experiments and the file associated with them:
 ## Citation
 
 ```
-@inproceedings{branco-etal-2021-shortcutted-commonsense,
+@inproceedings{branco-etal-2021-shortcutted,
     title = "Shortcutted Commonsense: Data Spuriousness in Deep Learning of Commonsense Reasoning",
     author = "Branco, Ruben  and
-        Branco, Ant{\'o}nio  and
-        Silva, João and
-        Rodrigues, João",
-    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+      Branco, Ant{\'o}nio  and
+      Ant{\'o}nio Rodrigues, Jo{\~a}o  and
+      Silva, Jo{\~a}o Ricardo",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
     month = nov,
     year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
     publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.113",
+    pages = "1504--1521",
+    abstract = "Commonsense is a quintessential human capacity that has been a core challenge to Artificial Intelligence since its inception. Impressive results in Natural Language Processing tasks, including in commonsense reasoning, have consistently been achieved with Transformer neural language models, even matching or surpassing human performance in some benchmarks. Recently, some of these advances have been called into question: so called data artifacts in the training data have been made evident as spurious correlations and shallow shortcuts that in some cases are leveraging these outstanding results. In this paper we seek to further pursue this analysis into the realm of commonsense related language processing tasks. We undertake a study on different prominent benchmarks that involve commonsense reasoning, along a number of key stress experiments, thus seeking to gain insight on whether the models are learning transferable generalizations intrinsic to the problem at stake or just taking advantage of incidental shortcuts in the data items. The results obtained indicate that most datasets experimented with are problematic, with models resorting to non-robust features and appearing not to be learning and generalizing towards the overall tasks intended to be conveyed or exemplified by the datasets.",
 }
 ```
